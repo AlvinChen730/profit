@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<HTML>
+
+<head>
+    <title></title>
+    <link href="css/style.css" rel="stylesheet">
+    <script>
+        function mybutton2() {
+            var a = document.getElementById('text1').value;
+            var b = document.getElementById('text2').value;
+            var c = document.getElementById('text3').value;
+            var d=(Number(b)+Number(c))*(100/(100-Number(a)));
+            document.getElementById('text4').value=d;
+        }
+    </script>
+
+<body>
+    <div id="center">
+     <p>請輸入當前稅率(例：若為50%即填入50)</p>  <input type="text" id="text1"></input>
+     <p>請輸入土地取得成本</p>  <input type="text" id="text2"> </input>
+     <p>請輸入欲獲利金額</p>  <input type="text" id="text3"></input><br><br>
+     <button type="button" onclick="mybutton2()">計算</button>
+     <p>預售金額為</p>  <input type="text" id="text4"></input><br>
+        
+    </div>
+</body>
+</head>
+</HTML>
